@@ -12,18 +12,17 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { EditIcon } from "@chakra-ui/icons";
-import { mealRecords } from "../data";
+import { users } from "../data";
 
-export default function MealsList() {
+export default function UsersList() {
   return (
     <>
       <HStack spacing="5" w="60%" pb="10">
         <Text>Filter: </Text>
         <Select size="sm">
           <option>All</option>
-          <option>This week</option>
-          <option>This month</option>
-          <option>This year</option>
+          <option>Only admins</option>
+          <option>Only users</option>
         </Select>
         <Button colorScheme="facebook" px="5">
           Search
@@ -33,21 +32,23 @@ export default function MealsList() {
         <Table variant="simple">
           <Thead bgColor="#f4f6f8">
             <Tr>
-              <Th>Time</Th>
-              <Th>Meal</Th>
-              <Th>Cals</Th>
+              <Th>S.No</Th>
+              <Th>Name</Th>
+              <Th>Role</Th>
               <Th>Edit</Th>
             </Tr>
           </Thead>
           <Tbody>
-            {mealRecords.map((item, i) => {
+            {users.map((item, i) => {
               return (
                 <Tr key={i}>
                   <Td>
-                    {item.date}-{item.time}
+                    {i}
                   </Td>
-                  <Td>{item.mealName}</Td>
-                  <Td>{item.calories}</Td>
+                  <Td>
+                    {item.name}
+                  </Td>
+                  <Td>{item.role}</Td>
                   <Td>
                     <EditIcon />
                   </Td>
@@ -58,5 +59,5 @@ export default function MealsList() {
         </Table>
       </TableContainer>
     </>
-  );
+  )
 }

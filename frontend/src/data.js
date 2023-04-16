@@ -42,3 +42,46 @@ export const mealRecords = [
     calories: 2000
   }
 ]
+
+export const users = [
+  {
+    name: "Rahul",
+    role: "User",
+  },
+  {
+    name: "Raman Singh",
+    role: "User",
+  },
+  {
+    name: "Sonali",
+    role: "Admin",
+  },
+  {
+    name: "Shubham",
+    role: "User",
+  },
+  {
+    name: "Rehan",
+    role: "User",
+  },
+  {
+    name: "Sourav",
+    role: "User",
+  },
+  {
+    name: "Pawan",
+    role: "Admin",
+  },
+  {
+    name: "Khushi",
+    role: "User",
+  },
+  {
+    name: "Aayush",
+    role: "User",
+  },
+  {
+    name: "Suman",
+    role: "Admin",
+  },
+]
