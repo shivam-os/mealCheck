@@ -28,7 +28,7 @@ export default function Register() {
   const handleFormSubmit = async (data) => {
     try {
       console.log(data);
-      const response = await api.post("/user/register", data);
+      const response = await api.post("/users/register", data);
       console.log(response);
       toast({
         variant: "subtle",

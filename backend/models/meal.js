@@ -24,7 +24,6 @@ module.exports = (sequelize, DataTypes) => {
     calories: {
       type: DataTypes.TINYINT,
       allowNull: false,
-      defaultValue: 250,
     },
 
     servings: {

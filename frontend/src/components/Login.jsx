@@ -27,7 +27,7 @@ export default function Login() {
 
   const handleLoginSubmit = async (data) => {
     try {
-      const response = await api.post("/user/login", data);
+      const response = await api.post("/users/login", data);
       console.log(response)
       toast({
         variant: "subtle",
